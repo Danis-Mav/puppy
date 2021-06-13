@@ -13,7 +13,11 @@ namespace OpenWeather
     {
         static void Main(string[] args)
         {
-            var url = $"http://www.recipepuppy.com/api/";
+            var ingredients = "onions,garlic";
+            var query = "omelet";
+            var page = "3";
+
+            var url = $"http://www.recipepuppy.com/api/?i={ingredients}&q={query}&p={page}";
 
             var request = WebRequest.Create(url);
 
